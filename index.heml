@@ -1,0 +1,653 @@
+<heml>
+
+  <head>
+    <preview>✨TEFAL ➤ скидка до 40%.</preview>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+      body {
+        background: #e5e5e5;
+        margin: 0;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      container {
+        background: #ffffff;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      ul.hr {
+        margin: 0;
+        /* Обнуляем значение отступов */
+        padding: 8px;
+        /* Значение полей */
+      }
+
+      ul.hr li {
+        display: inline;
+        /* Отображать как строчный элемент */
+        padding: 10px;
+        /* Поля вокруг текста */
+      }
+
+      li {
+        list-style-type: none;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        color: #333333;
+      }
+
+      img {
+        margin: 0;
+        padding: 0;
+      }
+
+      block.central {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      p {
+        color: #000000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .mob-v {
+        display: none !important;
+      }
+
+      .mob-480 {
+        display: none !important;
+      }
+
+      .text-header {
+        margin: 0;
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 5px 0 20%;
+      }
+
+      .block-1 {
+        width: 600px;
+      }
+
+      .block-scores {
+        color: #000000;
+        font-size: 11px;
+        padding: 10px 10px;
+      }
+
+      .img-score {
+        display: inline-block;
+        vertical-align: bottom;
+      }
+
+      .cl-center {
+        text-align: center;
+        padding: 5px 0;
+      }
+
+      .text-prev {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        color: #51555c;
+      }
+
+      .block-prod {
+        background-color: #ffffff;
+        margin: 0 auto;
+        padding: 2px 0 10px;
+        width: 90%;
+      }
+
+      .cart-prod {
+        background: #ffffff;
+        padding: 5px 5px 20px;
+        border: #f5f5f5 solid 5px;
+      }
+
+      .sale-prod {
+        padding-left: 3px;
+        padding-bottom: 5px;
+      }
+
+      .text-prod {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        padding: 5px 0;
+      }
+
+      .img-prod {
+        margin: auto;
+        width: 150px;
+      }
+
+      .btn-buy {
+        margin: auto;
+      }
+
+      .row-prod {
+        padding: 15px 15px;
+      }
+
+      .offer-block {
+        max-width: 480px;
+        margin: 0 auto !important;
+        padding: 10px 0;
+      }
+
+      .offer-central {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        padding-left: 30px;
+      }
+
+      .offer-content {
+        font-size: 13px;
+        padding: 10px 20px;
+        color: #858589;
+      }
+
+      .offer-img {
+        float: left;
+        padding: 0px 10px 10px 0;
+      }
+
+      .offer-title {
+        font-size: 14px;
+        margin: 14px 0 0 60px;
+        line-height: 12px;
+        text-decoration: none;
+        color: #000000;
+
+      }
+
+      .offer-text {
+        font-size: 12px;
+        margin: 6px 0 0 60px;
+        line-height: 14px;
+        color: #a8a8a8;
+      }
+
+      .foot-txt {
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px 15px 0;
+      }
+
+      .foot-txt-1 {
+        max-width: 500x;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .foot-txt-list {
+        font-size: 14px;
+        float: right;
+      }
+
+      .foot-txt-list-1 {
+        text-align: center;
+        color: #333333;
+        font-size: 10px;
+      }
+
+      .block-foot {
+        padding: 10px 10% 30px;
+      }
+
+      .btn-pd {
+        padding: 0 10px;
+      }
+    </style>
+    <style>
+      @media screen and (max-width: 600px),
+      screen and (max-device-width: 600px) {
+        .desk-v {
+          display: none !important;
+        }
+
+        .mob-v {
+          display: block !important;
+        }
+
+        .offer-central {
+          max-width: 300px !important;
+          padding-left: 60px !important;
+        }
+
+      }
+
+      @media screen and (max-width: 576px),
+      screen and (max-device-width: 576px) {
+
+        .block-prod {
+          max-width: 90% !important;
+        }
+      }
+
+      @media screen and (max-width: 480px),
+      screen and (max-device-width: 480px) {
+        .desk-480 {
+          display: none !important;
+        }
+
+        .mob-480 {
+          display: block !important;
+        }
+
+        .text-prev {
+          font-size: 11px !important;
+        }
+
+        .row-prod {
+          padding: 8px 8px !important;
+        }
+
+        .block-prod {
+          max-width: 90% !important;
+        }
+
+        .img-prod {
+          width: 80% !important;
+        }
+
+        .offer-title {
+          font-size: 15px !important;
+        }
+
+        .offer-text {
+          font-size: 13px !important;
+        }
+
+        .block-foot {
+          padding-top: 20px !important;
+        }
+
+        .foot-txt-list {
+          font-size: 12px !important;
+        }
+
+        .pd-footer {
+          padding: 0 30px !important;
+        }
+
+        .fon-foot-m {
+          background-color: #f5f5f5 !important;
+        }
+      }
+    </style>
+    <style heml-ignore>
+      a {
+        text-decoration: none !important;
+        color: #333333 !important;
+      }
+
+      .link-2 {
+        text-decoration: none !important;
+        color: #d0103a !important;
+      }
+
+      .link-3 {
+        color: #333333 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <container>
+      <container>
+        <row style="padding:20px 15px 12px ;">
+          <column large="3" small="5"><a href="https://shop.tefal.ru/"><img style="float: right;" src="img/logo.png"
+                width="142" alt="logo" style="margin: auto; vertical-align: middle; padding-top: 3px;"></a></column>
+          <column large="1" small="1"><img src="img/decor-line.png" width="1" alt="line"
+              style="margin: auto; vertical-align: middle; padding-top: 3px;">
+          </column>
+          <column large="6" small="6">
+            <p style="margin:0; font-size: 14px; font-weight: 700;">ОФИЦИАЛЬНЫЙ<br>ИНТЕРНЕТ-МАГАЗИН</p>
+          </column>
+          <column large="2" small="0"></column>
+        </row>
+        <img src="img/line-5.png" width="100%" alt="line">
+      </container>
+      <container class="menu desk-480">
+        <block class="central">
+          <ul class="hr">
+            <li><a href="https://shop.tefal.ru/category/posuda" target="_blank">Посуда</a></li>
+            <li><a href="https://shop.tefal.ru/category/prigotovlenie-edy" target="_blank">
+                Приготовление еды</a></li>
+            <li><a href="https://shop.tefal.ru/category/pylesosy" target="_blank">
+                Пылесосы</a></li>
+            <li><a href="https://shop.tefal.ru/category/utjugi-i-parogeneratory
+              " target="_blank" style="white-space: nowrap ;"> Утюги и
+                парогенераторы</a></li>
+          </ul>
+        </block>
+      </container>
+      <container class="desk-480">
+        <row class="block-scores">
+          <column large="7" small="0"></column>
+          <column large="4" small="6" class="cl-center">
+            <img class="img-score" src="img/score.png" alt="Баллы" width="18">
+            <span style="color: #333333; font-size: 12px;">
+              Баллы:<span style="color: #EB212E; padding: 0 2px;">XXX</span></span>
+          </column>
+          <column large="6" small="6" class="cl-center">
+            <img class="img-score" src="img/level.png" alt="Уровень" width="18">
+            <span style="color: #333333; font-size: 12px;">
+              Уровень:<span style="color: #EB212E; padding: 0 2px 0 0;">CLASSIC</span></span>
+          </column>
+          <column large="7" small="12" class="cl-center"> <a href="https://shop.tefal.ru/loyalty-program"
+              style="text-decoration: underline ; color: #6d6d6d; font-size: 12px;">Как использовать баллы!</a>
+          </column>
+        </row>
+      </container>
+      <container style="background: #f5f5f5;">
+        <row class="desk-480">
+          <column>
+            <a href="https://shop.tefal.ru/nightsale
+"><img src="img/tefal-ban-d.png"></a>
+          </column>
+        </row>
+        <row class="mob-480">
+          <column>
+            <a href="https://shop.tefal.ru/nightsale
+"><img src="img/tefal-ban-m.png"></a>
+          </column>
+        </row>
+      </container>
+      <container style="background: #f5f5f5; padding: 20px 0 10px">
+        <row class="desk-480" style="padding:0 15px 15px;">
+          <column><img src="img/pred-tefal-d.png" alt="prev" style="margin: auto;">
+          </column>
+        </row>
+        <row class="mob-480">
+          <column><img src="img/pred-tefal-m.png" alt="prev" style="margin: auto;">
+          </column>
+        </row>
+        <row style="padding: 0 5px;">
+          <column large="4" small="4">
+            <p class="text-prev">Выберите товар<br> на сайте: <strong><u><a href="https://shop.tefal.ru"
+                    class="link-2">shop.tefal.ru</a></u></strong></p>
+          </column>
+          <column large="4" small="4">
+            <p class="text-prev">Положите товар в корзину и примените <strong class="link-2">промокод NIGHT</strong>
+            </p>
+          </column>
+          <column large="4" small="4">
+            <p class="text-prev">Стоимость со скидкой отобразится <strong class="link-2">в&nbsp;корзине</strong></p>
+          </column>
+        </row>
+        <row style="padding-top: 25px;">
+          <column><a href="https://shop.tefal.ru/nightsale
+"><img src="img/btn-look.png" width="268" alt="Смотреть товары" style="margin: auto;"></a>
+          </column>
+        </row>
+      </container>
+      <container class="desk-480" style="background: #f5f5f5; padding: 0 0 10px">
+        <row class="row-prod">
+          <column large="4" small="4">
+            <block class="block-prod"><img class="sale-prod" src="img/sale.png" width="80" alt="скидка">
+              <a href="https://shop.tefal.ru/product/posuda/skovorody/skovoroda-grily-tefal-unlimited-26-sm-e2294074
+"><img class="img-prod" src="img/prod-1.png" alt="Прод-1">
+                <p class="text-prod">Сковорода-гриль<br> круглая Tefal<br> Unlimited 26см<br> E2294074</p>
+              </a><br>
+              <a href="https://shop.tefal.ru/product/posuda/skovorody/skovoroda-grily-tefal-unlimited-26-sm-e2294074
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+          <column large="4" small="4">
+            <block class="block-prod"><img class="sale-prod" src="img/sale.png" width="80" alt="скидка">
+              <a href="https://shop.tefal.ru/product/posuda/posuda-so-s-emnoj-ruchkoj/nabor-tefal-ingenio-twinkle-grey-skovorody-22-26-kovsh-16-ruchka-5
+"><img class="img-prod" src="img/prod-2.png" alt="Прод-2">
+                <p class="text-prod">Набор посуды<br> Tefal Ingenio<br> Twinkle Grey<br> 4 предмета<br> 04180850</p>
+              </a>
+              <a href="https://shop.tefal.ru/product/posuda/posuda-so-s-emnoj-ruchkoj/nabor-tefal-ingenio-twinkle-grey-skovorody-22-26-kovsh-16-ruchka-5
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+          <column large="4" small="4">
+            <block class="block-prod"><img class="sale-prod" src="img/sale.png" width="80" alt="скидка">
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/mul-tivarki/multivarka-tefal-expert-cook-rk802b32-seraya
+"><img class="img-prod" src="img/prod-3.png" alt="Прод-3">
+                <p class="text-prod">Мультиварка<br> с индукционным<br> нагревом Tefal<br> RK802B32</p>
+              </a><br>
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/mul-tivarki/multivarka-tefal-expert-cook-rk802b32-seraya
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+        </row>
+        <row class="row-prod">
+          <column large="4" small="4">
+            <block class="block-prod"><img class="sale-prod" src="img/sale.png" width="80" alt="скидка">
+              <a href="https://shop.tefal.ru/product/utjugi-i-parogeneratory/parogeneratory/parogenerator-tefal-express-vision-gv9821e0
+"><img class="img-prod" src="img/prod-4.png" alt="Прод-4">
+                <p class="text-prod">Парогенератор<br> Tefal Express<br> Vision GV9821E0</p>
+              </a><br><br>
+              <a href="https://shop.tefal.ru/product/utjugi-i-parogeneratory/parogeneratory/parogenerator-tefal-express-vision-gv9821e0
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+          <column large="4" small="4">
+            <block class="block-prod"><img class="sale-prod" src="img/sale.png" width="80" alt="скидка">
+              <a href="https://shop.tefal.ru/product/pylesosy/pylesosy/pylesos-s-kontejnerom-tefal-silence-force-cyclonic-tw7260ea
+"><img class="img-prod" src="img/prod-5.png" alt="Прод-5">
+                <p class="text-prod">Пылесос с<br> контейнером<br> Tefal Silence<br> Force Cyclonic<br> TW7260EA</p>
+              </a>
+              <a href="https://shop.tefal.ru/product/pylesosy/pylesosy/pylesos-s-kontejnerom-tefal-silence-force-cyclonic-tw7260ea
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+          <column large="4" small="4">
+            <block class="block-prod"><img class="sale-prod" src="img/sale.png" width="80" alt="скидка">
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/grili/kontaktnyj-gril-tefal-supergrill-gc450b
+"><img class="img-prod" src="img/prod-6.png" alt="Прод-6">
+                <p class="text-prod">Электрогриль<br> Tefal<br> Supergrill<br> GC450B32</p>
+              </a><br>
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/grili/kontaktnyj-gril-tefal-supergrill-gc450b
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+        </row>
+      </container>
+      <container class="mob-480" style="background: #f5f5f5; padding: 10px 0">
+        <row class="row-prod">
+          <column small="6">
+            <block class="block-prod"><img class="sale-prod" src="img/sale-m.png" width="64" alt="скидка">
+              <a href="https://shop.tefal.ru/product/posuda/skovorody/skovoroda-grily-tefal-unlimited-26-sm-e2294074
+"><img class="img-prod" src="img/prod-1.png" alt="Прод-1">
+                <p class="text-prod">Сковорода-гриль<br> круглая Tefal<br> Unlimited 26см<br> E2294074</p>
+              </a>
+              <a href="https://shop.tefal.ru/product/posuda/skovorody/skovoroda-grily-tefal-unlimited-26-sm-e2294074
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+          <column small="6">
+            <block class="block-prod"><img class="sale-prod" src="img/sale-m.png" width="64" alt="скидка">
+              <a href="https://shop.tefal.ru/product/posuda/posuda-so-s-emnoj-ruchkoj/nabor-tefal-ingenio-twinkle-grey-skovorody-22-26-kovsh-16-ruchka-5
+"><img class="img-prod" src="img/prod-2.png" alt="Прод-2">
+                <p class="text-prod">Набор посуды<br> Tefal Ingenio<br> Twinkle Grey<br> 4 предмета 04180850</p>
+              </a>
+              <a href="https://shop.tefal.ru/product/posuda/posuda-so-s-emnoj-ruchkoj/nabor-tefal-ingenio-twinkle-grey-skovorody-22-26-kovsh-16-ruchka-5
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+        </row>
+        <row class="row-prod">
+          <column small="6">
+            <block class="block-prod"><img class="sale-prod" src="img/sale-m.png" width="64" alt="скидка">
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/mul-tivarki/multivarka-tefal-expert-cook-rk802b32-seraya
+"><img class="img-prod" src="img/prod-3.png" alt="Прод-3">
+                <p class="text-prod">Мультиварка<br> с индукционным<br> нагревом Tefal<br> RK802B32</p>
+              </a>
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/mul-tivarki/multivarka-tefal-expert-cook-rk802b32-seraya
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+          <column small="6">
+            <block class="block-prod"><img class="sale-prod" src="img/sale-m.png" width="64" alt="скидка">
+              <a href="https://shop.tefal.ru/product/utjugi-i-parogeneratory/parogeneratory/parogenerator-tefal-express-vision-gv9821e0
+"><img class="img-prod" src="img/prod-4.png" alt="Прод-4">
+                <p class="text-prod">Парогенератор<br> Tefal Express<br> Vision GV9821E0</p>
+              </a><br>
+              <a href="https://shop.tefal.ru/product/utjugi-i-parogeneratory/parogeneratory/parogenerator-tefal-express-vision-gv9821e0
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+        </row>
+        <row class="row-prod">
+          <column small="6">
+            <block class="block-prod"><img class="sale-prod" src="img/sale-m.png" width="64" alt="скидка">
+              <a href="https://shop.tefal.ru/product/pylesosy/pylesosy/pylesos-s-kontejnerom-tefal-silence-force-cyclonic-tw7260ea
+"><img class="img-prod" src="img/prod-5.png" alt="Прод-5">
+                <p class="text-prod">Пылесос<br> с контейнером<br> Tefal Silence<br> Force Cyclonic<br> TW7260EA</p>
+              </a>
+              <a href="https://shop.tefal.ru/product/pylesosy/pylesosy/pylesos-s-kontejnerom-tefal-silence-force-cyclonic-tw7260ea
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+          <column small="6">
+            <block class="block-prod"><img class="sale-prod" src="img/sale-m.png" width="64" alt="скидка">
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/grili/kontaktnyj-gril-tefal-supergrill-gc450b
+"><img class="img-prod" src="img/prod-6.png" alt="Прод-6">
+                <p class="text-prod">Электрогриль<br> Tefal Supergrill<br> GC450B32</p>
+              </a><br><br>
+              <a href="https://shop.tefal.ru/product/prigotovlenie-edy/grili/kontaktnyj-gril-tefal-supergrill-gc450b
+"><img class="btn-buy" src="img/btn-byu.png" width="135" alt="buy"></a>
+            </block>
+          </column>
+        </row>
+      </container>
+      <container style="background: #f5f5f5; padding: 5px 0 20px">
+        <row>
+          <column><a href="https://shop.tefal.ru"><img style="margin: auto;" src="img/btn-gosaite.png" width="188"
+                alt="btn"></a>
+          </column>
+        </row>
+      </container>
+      <container>
+        </row>
+        <block class="offer-block">
+          <row>
+            <column>
+              <div class="offer-central"><a href="https://shop.tefal.ru/video-consultations" target="_blank"><img
+                    class="offer-img" width="50px" src="img/consult.png" alt="Consult"></a>
+                <a href="https://shop.tefal.ru/video-consultations">
+                  <p class="offer-title" target="_blank">Онлайн-консультация</p>
+                </a>
+                <p class="offer-text">Покажем и расскажем<br>о технике не выходя<br>из дома!</p>
+              </div>
+            </column>
+            <column>
+              <div class="offer-central"><a href="https://shop.tefal.ru/loyalty-program" target="_blank"><img
+                    class="offer-img" width="50px" src="img/loyalty.png" alt="Лояльность"></a>
+                <a href="https://shop.tefal.ru/loyalty-program" target="_blank">
+                  <p class="offer-title">Программа лояльности</p>
+                </a>
+                <p class="offer-text"> Баллы за покупки и многие<br />
+                  другие преимущества</p>
+              </div>
+            </column>
+          </row>
+          <row>
+            <column>
+              <div class="offer-central"><a href="https://shop.tefal.ru/vozvrat-tovara" target="_blank"><img
+                    class="offer-img" width="50px" src="img/return.png" alt="Возврат"></a>
+                <a href="https://shop.tefal.ru/vozvrat-tovara" target="_blank">
+                  <p class="offer-title">Возврат товара</p>
+                </a>
+                <p class="offer-text"> По любой причине<br>в течение 7 дней</p>
+              </div>
+            </column>
+            <column>
+              <div class="offer-central"><a href="https://shop.tefal.ru/dostavka" target="_blank"><img class="offer-img"
+                    width="50px" src="img/free-ship.png" alt="Доставка"></a>
+                <a href="https://shop.tefal.ru/dostavka" target="_blank">
+                  <p class="offer-title">Бесплатная доставка</p>
+                </a>
+                <p class="offer-text">В ПВЗ &laquo;Озон&raquo;<br>при онлайн оплате</p>
+              </div>
+            </column>
+          </row>
+        </block>
+      </container>
+      <container class="desk-480">
+        <row>
+          <column>
+            <hr style="width: 500px; border-width: 2px; border-color: #e5e5e5;">
+          </column>
+        </row>
+        <block class="central foot-txt">
+          <row>
+            <column large="3" small="3">
+              <a href="https://vk.com/tefal_ru"><img src="img/vk-icon.png" width="27" height="27" alt="VK"></a>
+            </column>
+            <column large="3" small="3" class="foot-txt-list"> <a href="https://shop.tefal.ru/contacts"
+                style="text-decoration: none; color: #a8a8a8;">Контакты</a>
+            </column>
+
+            <column large="3" small="3" class="foot-txt-list"> <a href="https://shop.tefal.ru/vozvrat-tovara"
+                style="text-decoration: none; color: #a8a8a8;">Возврат</a>
+            </column>
+            <column large="3" small="3" class="foot-txt-list"> <a href="https://shop.tefal.ru/oplata"
+                style="text-decoration: none; color: #a8a8a8;">Оплата</a>
+            </column>
+          </row>
+        </block>
+      </container>
+      <container class="mob-480" style="background: #f5f5f5; padding-top: 5px;">
+        <block class="central foot-txt">
+          <row>
+            <column large="4" small="4" class="foot-txt-list-1"> <a href="https://shop.tefal.ru/vozvrat-tovara"
+                style="text-decoration: none; color: #333333;">ОБМЕН И ВОЗВРАТ</a>
+            </column>
+            <column large="4" small="4" class="foot-txt-list-1"> <a href="https://shop.tefal.ru/oplata"
+                style="text-decoration: none; color: #333333;">ОПЛАТА ТОВАРА</a>
+            </column>
+            <column large="4" small="4" class="foot-txt-list-1"> <a href="https://shop.tefal.ru/contacts"
+                style="text-decoration: none; color: #333333;">КОНТАКТЫ</a>
+            </column>
+          </row>
+          <row style="padding: 10px;">
+            <column large="12" small="12">
+              <a href="https://vk.com/tefal_ru"><img style="margin: 0 auto;" src="img/vk-icon.png" width="27"
+                  height="27" alt="VK"></a>
+            </column>
+          </row>
+        </block>
+      </container>
+      <container class="fon-foot-m">
+        <block class="foot-txt-1">
+          <p class="offer-content">Вы получили это письмо, потому что подписались на рассылку на сайте <u><a
+                class="link-3" href="https://shop.tefal.ru"><span
+                  style="text-decoration: none; color: #a8a8a8; white-space: nowrap;">shop.tefal.ru</span></a></u>
+          </p>
+        </block>
+      </container>
+      <container>
+        <row class="block-foot">
+          <column large="3" small="6">
+            <block class="btn-pd"> <a href="${Message.UnsubscribeLink}"><img style="float: right;"
+                  src="img/otpis-btn.png" width="105" alt="Отписаться"></a>
+            </block>
+          </column>
+          <column large="3" small="6">
+            <block class="btn-pd"> <a href="${Message.AccessibilityLink}"><img src="img/web-btn.png" width="105"
+                  alt="Веб-версия"></a>
+            </block>
+          </column>
+          <column large="5" small="0"></column>
+        </row>
+      </container>
+
+    </container>
+  </body>
+</heml>

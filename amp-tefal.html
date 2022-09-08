@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html ⚡4email data-css-strict>
+
+<head>
+  <meta charset="utf-8" />
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+
+  <style amp4email-boilerplate>
+    body {
+      visibility: hidden;
+    }
+  </style>
+  <style amp-custom>
+    body {
+      background-color: #afafaf;
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333333;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .preheader-text {
+      display: none;
+      font-size: 1px;
+      color: #f5f5f5;
+      line-height: 1px;
+      font-family: Helvetica, Arial, sans-serif;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden
+    }
+
+    .no-show {
+      display: none;
+      width: 0;
+      height: 0;
+      max-height: 0;
+      overflow: hidden
+    }
+
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 0 auto;
+
+    }
+
+    .container-bg {
+      background-color: #f5f5f5;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .header {
+      padding: 10px 15px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    .row-rap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+      gap: 20px;
+    }
+
+    .row-c {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .score {
+      font-size: 12px;
+      padding: 3px 8px 0 0;
+      color: #333333;
+    }
+
+    .text-prev {
+      text-align: center;
+      font-size: 13px;
+      color: #51555c;
+    }
+
+    .link-1 {
+      text-decoration: none;
+      color: #333333;
+    }
+
+    .link-2 {
+      text-decoration: none;
+      color: #d0103a;
+    }
+
+    .col-33 {
+      width: 33%;
+    }
+
+    .sdk {
+      align-self: flex-start;
+      padding: 2px 0 5px 2px;
+    }
+
+    .sdk-text {
+      font-size: 11px;
+      color: #EB212E;
+      border: 1px solid #EB212E;
+      border-radius: 5px 0 5px 0;
+      padding: 5px 3px;
+    }
+
+    .text-prod {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      padding: 5px 0;
+    }
+
+    .w-offer {
+      width: 220px;
+    }
+
+    .offer-title {
+      font-size: 14px;
+      line-height: 12px;
+      margin-left: 8px;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .offer-text {
+      font-size: 12px;
+      margin: 5px 0 0 8px;
+      line-height: 14px;
+      color: #a8a8a8;
+    }
+
+    .foot-txt {
+      text-align: center;
+      color: #a8a8a8;
+      font-size: 14px;
+      padding: 0 20px;
+    }
+
+    .foot-txt-1 {
+      text-align: center;
+      color: #333333;
+      font-size: 10px;
+      padding: 0 15px;
+    }
+
+    .text-footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 10px 20px;
+      color: #858589;
+    }
+
+    @media only screen and (min-width:480px) {
+      .mob-row {
+        display: none;
+      }
+
+      .mob {
+        display: none;
+      }
+
+      .cart-prod {
+        background-color: #ffffff;
+        width: 180px;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 5px 2px 15px 2px;
+      }
+
+      .cont-txt-footer {
+        background-color: #ffffff;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+      }
+
+      .foot-btn-row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 0 20px 30px;
+      }
+    }
+
+    @media only screen and (max-width:480px) {
+      .desk {
+        display: none;
+      }
+
+      .mob-row {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .mob {
+        display: block;
+      }
+
+      .cart-prod {
+        background-color: #ffffff;
+        width: 140px;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 5px 2px 15px 2px;
+      }
+
+      .cont-txt-footer {
+        background-color: #f5f5f5;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+
+      .foot-btn-row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preheader Text -->
+  <div class="preheader-text">TEFAL. AMP email test!</div>
+  <!-- End Preheader Text -->
+
+  <div class="no-show">
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <div class="container">
+    <div class="container header desk row" style="justify-content: flex-start;">
+      <div style="margin:auto 0; padding-right: 10px;">
+        <a href="https://shop.tefal.ru/" target="_blank">
+          <amp-img src="img/logo.png" width="136" height="29" layout="fixed" alt="logo">
+          </amp-img>
+        </a>
+
+      </div>
+      <div>
+        <p style="padding-left: 10px; font-size: 12px; font-weight: 600; border-left:1px solid #afafaf">
+          ОФИЦИАЛЬНЫЙ<br>ИНТЕРНЕТ-МАГАЗИН</p>
+      </div>
+    </div>
+    <div class="container header mob-row row">
+      <div style="margin:auto 0; padding-right: 10px;">
+        <a href="https://shop.tefal.ru/" target="_blank">
+          <amp-img src="img/logo.png" width="136" height="29" layout="fixed" alt="logo" style="float: right;">
+          </amp-img>
+        </a>
+      </div>
+      <div>
+        <p style="padding-left: 10px; font-size: 12px; font-weight: 600; border-left:1px solid #afafaf">
+          ОФИЦИАЛЬНЫЙ<br>ИНТЕРНЕТ-МАГАЗИН</p>
+      </div>
+    </div>
+    <hr style="margin:0; color:#afafaf;">
+    <div class="container row desk" style="padding: 5px 5px">
+      <div class="menu" style="width: 17%">
+        <a href="https://shop.tefal.ru/category/posuda" target="_blank">Посуда</a>
+      </div>
+      <div class="menu" style="width: 28%">
+        <a href="https://shop.tefal.ru/category/prigotovlenie-edy" target="_blank">Приготовление еды</a>
+      </div>
+      <div class="menu" style="width: 20%">
+        <a href="https://shop.tefal.ru/category/pylesosy" target="_blank">Пылесосы</a>
+      </div>
+      <div class="menu" style="width: 35%">
+        <a href="https://shop.tefal.ru/category/utjugi-i-parogeneratory
+				" target="_blank">Утюги и
+          парогенераторы</a>
+      </div>
+    </div>
+    <div class="container row desk" style="justify-content: flex-end; padding: 5px 15px">
+      <div>
+        <amp-img src="img/score.png" width="18" height="18" layout="fixed" alt="Баллы">
+        </amp-img>
+      </div>
+      <div>
+        <p class="score">Баллы:<span style="color: #EB212E;">XXX</span></p>
+      </div>
+      <div>
+        <amp-img src="img/level.png" width="18" height="18" layout="fixed" alt="Баллы">
+        </amp-img>
+      </div>
+      <div>
+        <p class="score">Уровень:<span style="color: #EB212E;">XXXXXX</span></p>
+      </div>
+      <div><a href="https://shop.tefal.ru/loyalty-program" style="color:#6d6d6d; font-size: 12px;"><u>Как использовать
+            баллы</u></a></div>
+    </div>
+    <div class="container">
+      <a href="https://shop.tefal.ru/nightsale" target="_blank">
+        <amp-img src="img/tefal-ban-d.png" width="600" height="241" layout="responsive" alt="banner"
+          media="(min-width: 481px)"></amp-img>
+      </a>
+      <a href="https://shop.tefal.ru/nightsale" target="_blank">
+        <amp-img src="img/tefal-ban-m.png" width="320" height="340" layout="responsive" alt="banner"
+          media="(max-width: 480px)"></amp-img>
+      </a>
+    </div>
+    <div class="container-bg" style="padding: 15px 0 10px;">
+      <amp-img src="img/pred-tefal-d.png" width="600" height="64" layout="responsive" alt="prev"
+        media="(min-width: 480px)">
+      </amp-img>
+
+      <amp-img src="img/pred-tefal-m.png" width="320" height="60" layout="responsive" alt="prev"
+        media="(max-width: 480px)">
+      </amp-img>
+    </div>
+    <div class="container-bg row">
+      <div class="col-33" style="padding-left: 8px;">
+        <p class="text-prev">Выберите товар<br> на сайте: <strong><u><a href="https://shop.tefal.ru"
+                class="link-2">shop.tefal.ru</a></u></strong></p>
+      </div>
+      <div class="col-33" style="padding: 0 3px;">
+        <p class="text-prev">Положите товар в корзину и примените <strong class="link-2">промокод NIGHT</strong></p>
+      </div>
+      <div class="col-33" style="padding-right: 8px;">
+        <p class="text-prev">Стоимость со скидкой отобразится <strong class="link-2">в&nbsp;корзине</strong></p>
+      </div>
+    </div>
+    <div class="container-bg row" style="padding: 25px 0;">
+      <a href="https://shop.tefal.ru/nightsale" target="_blank">
+        <amp-img src="img/btn-look.png" width="268" height="38" layout="fixed" alt="Смотреть товар">
+        </amp-img>
+      </a>
+    </div>
+    <div class="container-bg">
+      <!-- Ref: https://amp.dev/documentation/components/amp-carousel/ -->
+      <amp-carousel width="auto" height="250" controls loop layout="fixed-height" type="slides" role="region">
+        <div class="row" style="gap: 10px">
+          <div class="row-c cart-prod">
+            <div class="sdk">
+              <p class="sdk-text">Скидки до - 40%</p>
+            </div>
+            </amp-img>
+            <amp-img src="img/prod-1.png" width="120" height="105"></amp-img>
+            <p class="text-prod">Сковорода-гриль<br> круглая Tefal<br> Unlimited 26см<br> E2294074</p>
+            <a href="https://shop.tefal.ru/product/posuda/skovorody/skovoroda-grily-tefal-unlimited-26-sm-e2294074"
+              target="_blank">
+              <amp-img src="img/btn-byu.png" width="135" height="37" layout="fixed" alt="btn">
+              </amp-img>
+            </a>
+          </div>
+
+          <div class="row-c cart-prod">
+            <div class="sdk">
+              <p class="sdk-text">Скидки до - 40%</p>
+            </div>
+            </amp-img>
+            <amp-img src="img/prod-2.png" width="120" height="105"></amp-img>
+            <p class="text-prod">Набор посуды<br> Tefal Ingenio<br> 4 предмета<br> 04180850</p>
+            <a href="https://shop.tefal.ru/product/posuda/posuda-so-s-emnoj-ruchkoj/nabor-tefal-ingenio-twinkle-grey-skovorody-22-26-kovsh-16-ruchka-5"
+              target="_blank">
+              <amp-img src="img/btn-byu.png" width="135" height="37" layout="fixed" alt="btn">
+              </amp-img>
+            </a>
+          </div>
+        </div>
+        <div class="row" style="gap: 10px">
+          <div class="row-c cart-prod">
+            <div class="sdk">
+              <p class="sdk-text">Скидки до - 40%</p>
+            </div>
+            <amp-img src="img/prod-3.png" width="120" height="105"></amp-img>
+            <p class="text-prod">Мультиварка<br> с индукционным<br> нагревом Tefal<br> RK802B32</p>
+            <a href="https://shop.tefal.ru/product/prigotovlenie-edy/mul-tivarki/multivarka-tefal-expert-cook-rk802b32-seraya"
+              target="_blank">
+              <amp-img src="img/btn-byu.png" width="135" height="37" layout="fixed" alt="btn">
+              </amp-img>
+            </a>
+          </div>
+          <div class="row-c cart-prod">
+            <div class="sdk">
+              <p class="sdk-text">Скидки до - 40%</p>
+            </div>
+            <amp-img src="img/prod-4.png" width="120" height="105"></amp-img>
+            <p class="text-prod">Парогенератор<br> Tefal Express<br> Vision<br> GV9821E0</p>
+            <a href="https://shop.tefal.ru/product/utjugi-i-parogeneratory/parogeneratory/parogenerator-tefal-express-vision-gv9821e0"
+              target="_blank">
+              <amp-img src="img/btn-byu.png" width="135" height="37" layout="fixed" alt="btn">
+              </amp-img>
+            </a>
+          </div>
+        </div>
+        <div class="row" style="gap: 10px">
+          <div class="row-c cart-prod">
+            <div class="sdk">
+              <p class="sdk-text">Скидки до - 40%</p>
+            </div>
+            <amp-img src="img/prod-5.png" width="120" height="105"></amp-img>
+            <p class="text-prod">Пылесос<br> Tefal Silence<br> Force Cyclonic<br> TW7260EA</p>
+            <a href="https://shop.tefal.ru/product/pylesosy/pylesosy/pylesos-s-kontejnerom-tefal-silence-force-cyclonic-tw7260ea"
+              target="_blank">
+              <amp-img src="img/btn-byu.png" width="135" height="37" layout="fixed" alt="btn">
+              </amp-img>
+            </a>
+
+          </div>
+          <div class="row-c cart-prod">
+            <div class="sdk">
+              <p class="sdk-text">Скидки до - 40%</p>
+            </div>
+            <amp-img src="img/prod-6.png" width="120" height="105"></amp-img>
+            <p class="text-prod">Электрогриль<br> Tefal<br> Supergrill<br> GC450B32</p>
+            <a href="https://shop.tefal.ru/product/prigotovlenie-edy/grili/kontaktnyj-gril-tefal-supergrill-gc450b"
+              target="_blank">
+              <amp-img src="img/btn-byu.png" width="135" height="37" layout="fixed" alt="btn">
+              </amp-img>
+            </a>
+
+          </div>
+        </div>
+      </amp-carousel>
+    </div>
+    <div class="container-bg row" style="padding: 25px 0 40px;">
+      <a href="https://shop.tefal.ru/" target="_blank">
+        <amp-img src="img/btn-gosaite.png" width="188" height="36" layout="fixed" alt="Смотреть товар">
+        </amp-img>
+      </a>
+    </div>
+    <div class="container row-rap" style="padding: 40px 20px 20px;">
+      <div class="row w-offer">
+        <div>
+          <a href="https://shop.tefal.ru/video-consultations" target="_blank">
+            <amp-img src="img/consult.png" width="50" height="50" layout="fixed" alt="consult">
+            </amp-img>
+          </a>
+        </div>
+        <div>
+          <p class="offer-title">Онлайн-консультация</p>
+          <p class="offer-text">Покажем и расскажем о технике не выходя из дома!</p>
+        </div>
+      </div>
+      <div class="row w-offer">
+        <div>
+          <a href="https://shop.tefal.ru/loyalty-program" target="_blank">
+            <amp-img src="img/loyalty.png" width="50" height="50" layout="fixed" alt="Лояльность">
+            </amp-img>
+          </a>
+        </div>
+        <div>
+          <p class="offer-title">Программа лояльности</p>
+          <p class="offer-text">Баллы за покупки и многие
+            другие преимущества</p>
+        </div>
+      </div>
+    </div>
+    <div class="container row-rap" style="padding: 0 20px 20px;">
+      <div class="row w-offer">
+        <div>
+          <a href="https://shop.tefal.ru/vozvrat-tovara" target="_blank">
+            <amp-img src="img/return.png" width="50" height="50" layout="fixed" alt="Возврат">
+            </amp-img>
+          </a>
+        </div>
+        <div>
+          <p class="offer-title">Возврат товара</p>
+          <p class="offer-text">По любой причине в течение 7 дней</p>
+        </div>
+      </div>
+      <div class="row w-offer">
+        <div>
+          <a href="https://shop.tefal.ru/dostavka" target="_blank">
+            <amp-img src="img/free-ship.png" width="50" height="50" layout="fixed" alt="доставка">
+            </amp-img>
+          </a>
+        </div>
+        <div>
+          <p class="offer-title">Бесплатная доставка</p>
+          <p class="offer-text">В ПВЗ Озон при онлайн оплате</p>
+        </div>
+      </div>
+    </div>
+    <hr class="desk" style="width: 500px;">
+    <div class="container row desk" style="justify-content: space-between; padding: 5px 40px;">
+      <div>
+        <a href="https://vk.com/tefal_ru" target="_blank">
+          <amp-img src="img/vk-icon.png" width="27" height="27" layout="fixed" alt="vk-icon">
+          </amp-img>
+        </a>
+      </div>
+      <div class="row">
+        <a href="https://shop.tefal.ru/oplata" target="_blank">
+          <p class="foot-txt link-3">Оплата</p>
+        </a>
+        <a href="https://shop.tefal.ru/vozvrat-tovara" target="_blank">
+          <p class="foot-txt link-3">Возврат</p>
+        </a>
+        <a href="https://shop.tefal.ru/contacts" target="_blank">
+          <p class="foot-txt link-3">Контакты</p>
+        </a>
+      </div>
+    </div>
+    <div class="container-bg row mob" style="padding: 20px 0 5px;">
+      <div class="row">
+        <a href="https://shop.tefal.ru/vozvrat-tovara" target="_blank">
+          <p class="foot-txt-1 link-1">ОБМЕН И ВОЗВРАТ</p>
+        </a>
+        <a href="https://shop.tefal.ru/oplata" target="_blank">
+          <p class="foot-txt-1 link-1">ОПЛАТА ТОВАРА</p>
+        </a>
+        <a href="https://shop.tefal.ru/contacts" target="_blank">
+          <p class="foot-txt-1 link-1">КОНТАКТЫ</p>
+        </a>
+
+      </div>
+      <div class="row" style="padding: 15px 0 0">
+        <a href="https://vk.com/tefal_ru" target="_blank">
+          <amp-img src="img/vk-icon.png" width="27" height="27" layout="fixed" alt="VK">
+          </amp-img>
+        </a>
+
+      </div>
+    </div>
+    <div class="cont-txt-footer">
+      <p class="text-footer">Вы получили это письмо, потому что подписались на рассылку на сайте <u><a
+            href="https://shop.tefal.ru"><span
+              style="text-decoration: none; color: #a8a8a8; white-space: nowrap;">shop.tefal.ru</span></a></u></p>
+    </div>
+    <div class="container foot-btn-row">
+      <a href="https://shop.tefal.ru" target="_blank">
+        <amp-img src="img/otpis-btn.png" width="105" height="30" layout="fixed" alt="Отписаться">
+        </amp-img>
+      </a>
+      <a href="https://shop.tefal.ru" target="_blank">
+        <amp-img src="img/web-btn.png" width="105" height="30" layout="fixed" alt="Веб-версия">
+        </amp-img>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
